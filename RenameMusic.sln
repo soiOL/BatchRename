@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameMusic", "RenameMusic\RenameMusic.csproj", "{F74C2150-CAC8-497D-9A49-DBF4187C7863}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F74C2150-CAC8-497D-9A49-DBF4187C7863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74C2150-CAC8-497D-9A49-DBF4187C7863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74C2150-CAC8-497D-9A49-DBF4187C7863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74C2150-CAC8-497D-9A49-DBF4187C7863}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E37E014-2915-4C4A-86BF-D7A0F8CB6A9E}
+	EndGlobalSection
+EndGlobal

@@ -7,25 +7,38 @@
         mc:Ignorable="d"
         Title="批量重命名" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="3*"/>
-        </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Bottom">
                 <TextBlock Text="文件夹路径:" HorizontalAlignment="Left"   />
                 <TextBox Name="filepath" HorizontalAlignment="Left" TextWrapping="Wrap"  Width="341"/>
                 <Button Content="选择文件夹" HorizontalAlignment="Right" Width="82" Height="22" Click="Button_Click"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom">
-            <TextBlock Text="输入文件头:" HorizontalAlignment="Left" />
-            <TextBox Name="Head" HorizontalAlignment="Left" TextWrapping="Wrap" Width="341"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Center">
-            <TextBlock Text="输入文件头:" HorizontalAlignment="Left" />
-            <TextBox Name="End" HorizontalAlignment="Left" TextWrapping="Wrap" Width="341"/>
-        </StackPanel>
-        <Button Content="重命名" HorizontalAlignment="Center" Grid.Row="3"  VerticalAlignment="Bottom" Margin="0,0,0,30" Width="196" Height="86" Click="Button_Click_1"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom">
+                <TextBlock Text="输入文件头:" HorizontalAlignment="Left" />
+                <TextBox Name="Head" HorizontalAlignment="Left" TextWrapping="Wrap" Width="341"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Center">
+                <TextBlock Text="输入文件尾:" HorizontalAlignment="Left" />
+                <TextBox Name="End" HorizontalAlignment="Left" TextWrapping="Wrap" Width="341"/>
+            </StackPanel>
+            <StackPanel  Grid.Row="3" VerticalAlignment="Center">
+                <CheckBox Name="isOldName" Content="是否保留原名称" Click="IsOldName_OnClick" IsChecked="True"></CheckBox>
+                <CheckBox Name="isIndexNum" Content="是否设置自增序号" Click="IsIndexNum_OnClick" IsChecked="True" Margin="0,10,0,0"></CheckBox>
+            </StackPanel>
+            <Button Content="重命名" HorizontalAlignment="Center" Grid.Row="4"  VerticalAlignment="Bottom" Margin="0,0,0,30" Width="196" Height="86" Click="Button_Click_1"/>
+        </Grid>
     </Grid>
 </Window>
